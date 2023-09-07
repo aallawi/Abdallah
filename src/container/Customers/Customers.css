@@ -1,0 +1,60 @@
+.customers_grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.custom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.custom_photo {
+    width: 110px;
+    height: 110px;
+
+    margin-right: 1rem;
+}
+.custom_photo img {
+    width: 100%;
+    height: 100%;
+}
+.custom_info {
+    flex: 1;
+    padding: 10px 0;
+}
+
+
+@media screen and (max-width : 750px) {
+    .customers_grid {
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+    }
+    .custom_photo {
+        width: 90px;
+        height: 90px;
+    }
+}
+@media screen and (max-width : 450px) {
+    .customers_grid {
+        gap: 0;
+    }
+    .custom_photo {
+        margin: 0 auto;
+    }
+    .custom {
+        flex-direction: column;
+        margin: 1rem auto;
+    }
+    .custom_info {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .name_job {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,109 @@
+.chefs {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2rem 1rem;
+}
+.chef {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.chef_photo {
+    position: relative;
+}
+.social {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 ,0.4);
+}
+.social_icon {
+    padding-top: 40%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social_icon>svg {
+    font-size: 18px;
+    margin: 5px;
+    color: var(--color-white);
+    cursor: pointer;
+}
+.chef_photo img {
+    width: 100%;
+    border: solid 2px var(--color-golden);
+}
+
+/* hover */
+.chef:hover .social{
+    display: block;
+}
+.chef:hover .chef_name{
+    color: var(--color-golden);
+}
+.social_icon>svg:hover {
+    color: var(--color-golden);
+}
+
+
+.chef_name {
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    color: var(--color-golden);
+    cursor: pointer;
+
+    display: inline-block;
+    position: relative;
+}
+/*
+موجود فى ملف الناف بار
+.chef_name::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-golden);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.5s ease-in-out;
+}
+.chef_name:hover::after {
+    transform: scaleX(1);
+} */
+
+
+@media screen and (max-width : 750px) {
+    .chefs {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .chef {
+        padding: 1.5rem 1rem;
+    }
+    .chef_name {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width : 400px) {
+    .chefs {
+        grid-template-columns: repeat(1,1fr);
+        padding: 1rem 0;
+    }
+    .chef {
+        padding: 1.5rem 0;
+        margin: 0 auto;
+    }
+    .chef_photo {
+        max-width: 250px;
+    }
+}

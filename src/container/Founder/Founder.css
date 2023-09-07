@@ -1,0 +1,74 @@
+.Founder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Founder_img {
+    max-width: 350px;
+}
+.Founder_img img {
+    width: 100%;
+}
+
+/* content */
+.Founder_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1rem;
+    max-width: 600px;
+}
+
+.Founder_content_quote {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.Founder_content_quote img {
+    width: 20px;
+    height: 17px;
+    margin: 0 10px 10px 0;
+}
+
+/* sign */
+.Founder_content_sign {
+    width: 100%;
+    margin-top: 2rem;
+}
+.Founder_content_sign p:first-child {
+    font-family: var(--font-base);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: var(--color-golden);
+}
+.Founder_content_sign img {
+    width: 100px;
+    margin-top: 2rem;
+}
+@media screen and (max-width : 700px) {
+    /*   بتخلى الهيدينج فى سطر واحد (What We Believe In)
+     .Founder .Founder_content .heading_h {
+        font-size: 28px;
+    } */
+    .Founder_content_sign {
+        width: 100%;
+    }
+}
+@media screen and (max-width : 600px) {
+    .Founder {
+        flex-direction: column;
+    }
+    .Founder_content {
+        padding-right: 0;
+    }
+    .Founder_img {
+        padding-top: 2rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

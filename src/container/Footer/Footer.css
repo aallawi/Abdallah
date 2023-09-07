@@ -1,0 +1,68 @@
+.footer_links {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+.footer_links>div {
+    text-align: center;
+}
+.heading_p {
+    padding: 1rem 0;
+}
+.text_white {
+    padding: 2px 0;
+}
+.footer_links_contactUs {
+    
+}
+.footer_links_logo {
+    
+}
+.footer_links_logo img.gericht {
+    padding: 8px 0;
+    width: 7rem;
+}
+.footer_links_icons svg {
+    color: var(--color-white);
+    margin: 0.5rem;
+    font-size: 24px;
+    cursor: pointer;
+}
+.footer_links_icons svg:hover {
+    color: var(--color-golden);
+}
+.footer_links_work>p:nth-child(odd) {
+    margin-bottom: 0.5rem;
+}
+
+
+@media screen and (max-width:600px) {
+    .footer_links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .footer_links_logo {
+        width: 100%;
+    }
+    .footer_links_contactUs,
+    .footer_links_work  {
+        width: 50%;
+        padding: 10px;
+    }
+}
+
+
+.footer_copyright {
+    padding: 16px;
+    text-align: center;
+}
+.footer_copyright a {
+    color: var(--color-golden);
+    padding: 0 5px;
+    font-weight: 700;
+    transition: all ease-in 100ms;
+}

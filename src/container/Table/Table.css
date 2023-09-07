@@ -1,0 +1,55 @@
+.table_input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.table_input .input {
+    margin: 0.5rem; 
+    flex: 1;
+}
+.input select {
+    width: 100%;
+    background: var(--color-black);
+    border: 1px solid var(--color-golden);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--font-base);
+    color: var(--color-white);
+    font-weight: 800;
+    padding: 0.7rem;
+    line-height: 28px;
+    outline: none;
+    letter-spacing: 0.04em;
+}
+.input select:hover {
+    border: solid 1px var(--color-golden);
+}
+select > option { 
+    /*  الإستايل بتاع الاوبشن لسه متعملش */
+}
+select > option:hover {
+
+}
+
+.table .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width : 600px) {
+    .table_input {
+        flex-direction: column;
+    }
+    .table_input .input {
+        width: 100%; 
+        margin: 0.5rem 0; 
+    }
+    .input select {
+        font-size: 12px;
+        padding: 8px;
+    } 
+}

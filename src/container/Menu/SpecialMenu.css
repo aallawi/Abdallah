@@ -1,0 +1,62 @@
+.menu {
+    flex-direction: column;
+}
+
+.menu_wine_photo_cocktails {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+/* wine and cocktails */
+.menu_wine ,
+.menu_cocktails {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.menu_wine_heading ,
+.menu_cocktails_heading {
+    padding-top: 2rem;
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.menu_wine_items ,
+.menu_cocktails_items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* menu_photo */
+.menu_photo {
+    width: 300px;
+    margin: 0 2rem;
+}
+.menu_photo img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 850px) {
+    .menu_wine_photo_cocktails {
+        flex-direction: column;
+    }
+    .menu_photo {
+        width: 250px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 400px) {
+    .menu_photo {
+        width: 90%;
+    }
+}

@@ -1,0 +1,35 @@
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    color : "#fff"
+}
+
+.box_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* box_head */
+.box_head_name  {
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 20px;
+    font-size: 14px;
+}
+.box_head_price {
+    color: var(--color-grey);
+    font-size: 14px;
+}
+
+.box_head_dash {
+    flex: 1;
+    border-bottom:solid var(--color-grey)  1px;
+    line-height: 100px;
+    margin: 0px 4px;
+}

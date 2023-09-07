@@ -1,0 +1,104 @@
+.section_padding {
+  padding: 3rem 4rem;
+}
+@media screen and (max-width : 850px) {
+  .section_padding {
+    padding: 2rem 3rem;
+  }
+}
+@media screen and (max-width : 650px) {
+  .section_padding {
+    padding: 1.5rem;
+  }
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg_black_photo {
+  background: url("./assets/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.bg_black {
+  background-color: #0f0e0e;
+}
+.title {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 25px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
+.text_white {
+  color: var(--color-grey);
+  font-family: var(--font-alt);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 160%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+
+}
+@media screen and (max-width : 850px) {
+  .text_white {
+    font-size: 9px;
+  }
+}
+
+.custom_button {
+  background-color: var(--color-golden);
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 14px;
+  padding: 4px 25px;
+  border-radius: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.changing_button {
+  background-color: var(--color-golden);
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 12px;
+  padding: 4px 20px;
+  border-radius: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.changing_button:hover {
+  background-color: var(--color-black);
+  color: var(--color-golden);
+  border: solid 2px var(--color-golden);
+}
+
+
+
+@media screen and (min-width: 2000px) {
+  .custom_button {
+    font-size: 37px;
+    line-height: 67px;
+  }
+  .spoon_img {
+    width: 80px;
+  }
+}
+

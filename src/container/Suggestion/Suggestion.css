@@ -1,0 +1,70 @@
+/* suggestion */
+.suggestion {
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+}
+
+/* suggestion input */
+.suggestion_input {
+    flex: 1;
+    padding-right: 2rem;
+}
+.suggestion_input div {
+    margin: 2rem 0;
+}
+.suggestion_input input ,
+.suggestion_input textarea {
+    margin: 5px 0;
+    outline: none;
+    padding: 0.8rem;
+    font-size: 10px;
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px var(--color-golden);
+    color: var(--color-white);
+
+}
+.suggestion_input input:focus ,
+.suggestion_input textarea:focus {
+    border: solid 1.5px var(--color-golden);
+}
+.suggestion_input textarea {
+    resize: vertical;
+}
+.suggestion_input label {
+    color: var(--color-white);
+    font-family: var(--font-alt);
+    font-size: 12px;
+}
+
+
+/* suggestion photo */
+.suggestion_photo {
+    flex: 1;
+    max-width: 400px;
+}
+.suggestion_photo img {
+    width: 100%;
+}
+
+@media screen and (max-width : 650px) {
+    .suggestion {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .suggestion_input {
+        padding-right: 0;
+        width: 100%;
+    }
+    .suggestion_input div {
+        margin: 1rem 0;
+    }
+    .suggestion_photo {
+        margin: 0 auto;
+    }
+}

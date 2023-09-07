@@ -1,0 +1,67 @@
+.Happy {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/Happy.png);
+    background-position: center center;
+    background-size: cover;
+
+    position: relative;
+}
+.Happy_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+.Happy_text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+.Happy_titel {
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 130px;
+    letter-spacing: 0.04em;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+.Happy_time {   
+    color: var(--color-white);
+    font-family: var(--font-base);
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 160%;
+    letter-spacing: 0.04em;
+}
+@media screen and (max-width :750px) {
+    .Happy_titel {
+        font-size: 60px;
+        line-height: 100px;
+    }
+    .Happy_time {   
+        font-size: 20px;
+        line-height: 120%;
+    }
+}
+@media screen and (max-width :650px) {
+    .Happy_titel {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .Happy_time {   
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,62 @@
+.laurels {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* laurels_content */
+.laurels .laurels_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1rem;
+}
+.laurels .laurels_content .subheading {
+    margin-bottom: 1rem;
+}
+.laurels .laurels_content .awards {
+    /* All Awards */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+}
+
+/* photo */
+.laurels .laurels_photo {
+    width: 350px;
+}
+.laurels .laurels_photo img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Medeia Query  */
+@media screen and (max-width : 850px) {
+    .laurels .laurels_content .awards {
+        gap: 10px;
+    }
+    .laurels .laurels_photo {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .laurels {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    .laurels .laurels_content {
+        padding-right: 0;
+    }
+    .laurels .laurels_photo {
+        max-width: 400px;
+        width: 75%;
+        margin:2rem auto 0 auto;
+    }
+}
+@media screen and (max-width : 400px) {
+    .laurels .laurels_content .awards {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
