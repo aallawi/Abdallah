@@ -1,12 +1,9 @@
 /* map  */
-.map {
+/* .map {
     padding: 8% 4%;
-}
-.map img {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    border: solid 2px  var(--color-golden);
-}
+} */
 
+iframe {
+    border: 5px solid var(--color-golden);
+}
 
