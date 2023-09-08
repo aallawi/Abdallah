@@ -29,6 +29,9 @@
         flex-direction: column;
         padding-top: 0rem;
     }
+    .Header_info  {
+        text-align: center;
+    }
     .Header_photo {
         display: flex;
         justify-self: center;
